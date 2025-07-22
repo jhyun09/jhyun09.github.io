@@ -6,7 +6,7 @@ body {
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 24px 80px; /* 아래 80px은 푸터 공간 확보용 */
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
 }
 
