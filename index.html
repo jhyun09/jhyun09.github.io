@@ -7,8 +7,7 @@
   <meta name="robots" content="noindex, nofollow" />
 </head>
 <body>
- <div id="header-placeholder"></div>
-  
+
   <h1>📦 나만 쓰는 정보 저장 창고</h1>
   <p>개인이 각종 정보를 저장하는 개인 창고입니다. 마음껏 추가하고 꺼내 써보세요!</p>
 
@@ -40,26 +39,9 @@
     </div>
   </div>
   
-   <div id="footer-placeholder"></div>
-
   <footer>
     © 2025-07 나만 쓰는 저장소 | 디자인 by Hyun 😊
   </footer>
-<script>
-    // 헤더 불러오기
-    fetch('header.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-
-    // 푸터 불러오기
-    fetch('footer.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-  </script>
-  
+ 
 </body>
 </html>
