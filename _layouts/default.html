@@ -1,10 +1,8 @@
-<!-- 📄 _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>{{ page.title }}</title>
-  <meta name="robots" content="noindex, nofollow" />
+  <title>{% if page.title %}{{ page.title }}{% else %}나만 쓰는 저장 창고{% endif %}</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
