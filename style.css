@@ -201,7 +201,6 @@ footer {
 
 /* 고정 푸터 */
 .bottom-bar {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
