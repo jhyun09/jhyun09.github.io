@@ -181,6 +181,22 @@ footer {
   color: #aaa;
 }
 
+/* 고정 헤더 */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  color: #c2c2bf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 1000;
+}
 
 /* 고정 푸터 */
 .bottom-bar {
@@ -202,4 +218,5 @@ main {
   padding-top: 60px;   /* 헤더 높이만큼 확보 */
   padding-bottom: 32px; /* 푸터 여백 확보 */
 }
+
 
