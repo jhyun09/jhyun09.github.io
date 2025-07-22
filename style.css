@@ -1,21 +1,22 @@
-/* body, 기본 레이아웃 */
+/* 공통 레이아웃 */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #ecf0f3, #f2f4f8);
   color: #2c3e50;
   max-width: 960px;
   margin: 0 auto;
-  padding: 60px 24px 80px; /* 아래 80px은 푸터 공간 확보용 */
+  padding: 60px 24px 80px;
   text-align: left;
   box-sizing: border-box;
 }
 
-/* 헤더 고정 높이 공간 확보 */
-body > main {
-  padding-top: 60px; /* 헤더 높이만큼 여백 */
+/* 헤더 공간 확보 */
+main {
+  padding-top: 60px;
+  padding-bottom: 80px; /* 푸터 공간 확보 */
 }
 
-/* 헤더 스타일 */
+/* ✅ 헤더 스타일 */
 .site-header {
   position: fixed;
   top: 0;
@@ -31,9 +32,9 @@ body > main {
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 24px;
   box-sizing: border-box;
-  justify-content: space-between;
 }
 
 .site-header .logo {
@@ -64,7 +65,7 @@ body > main {
   outline: none;
 }
 
-/* 푸터 스타일 */
+/* ✅ 푸터 스타일 */
 .site-footer {
   position: fixed;
   bottom: 0;
@@ -103,126 +104,3 @@ body > main {
   color: #4a90e2;
   outline: none;
 }
-
-/* 제목 스타일 */
-h1 {
-  font-size: 32px;
-  margin-bottom: 12px;
-  color: #1c2833;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-p {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 48px;
-}
-
-/* 컨테이너와 컬럼 */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  text-align: left;
-}
-
-.column {
-  flex: 1;
-  min-width: 280px;
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
-}
-
-.column:hover {
-  transform: translateY(-4px);
-}
-
-.column h2 {
-  font-size: 20px;
-  color: #3362a8;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #6a6a6b;
-  padding-bottom: 8px;
-  text-align: center;
-  letter-spacing: 0.3px;
-}
-
-/* 링크 박스 */
-.link-box {
-  background: #ecebe9;
-  padding: 16px 20px;
-  border-radius: 10px;
-  margin-bottom: 18px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.link-box:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
-}
-
-.link-box a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: 600;
-  font-size: 16px;
-  display: block;
-}
-
-/* 기존 footer (본문 아래 텍스트용) */
-footer {
-  margin-top: 60px;
-  font-size: 13px;
-  color: #aaa;
-}
-
-/* 고정 헤더 */
-.top-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #000;
-  color: #c2c2bf;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  z-index: 1000;
-}
-
-/* 고정 푸터 */
-.bottom-bar {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: #555;
-  text-align: center;
-  font-size: 12px;
-  padding: 6px 0 24px;
-  background: none;
-  z-index: 1000;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* 본문 여백 확보 */
-main {
-  padding-top: 60px;   /* 헤더 높이만큼 확보 */
-  padding-bottom: 32px; /* 푸터 여백 확보 */
-}
-
