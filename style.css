@@ -1,72 +1,83 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
+  background: linear-gradient(to right, #ecf0f3, #f2f4f8);
+  color: #2c3e50;
   max-width: 960px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 24px;
   text-align: center;
 }
 
 h1 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-  font-size: 28px;
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #1c2833;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 p {
-  color: #555;
-  font-size: 14px;
-  margin-bottom: 40px;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 48px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
+  gap: 40px;
   text-align: left;
 }
 
 .column {
   flex: 1;
   min-width: 280px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.column:hover {
+  transform: translateY(-4px);
 }
 
 .column h2 {
-  font-size: 18px;
-  color: #4a6fa5;
-  margin-bottom: 16px;
-  border-bottom: 2px solid #4a6fa5;
-  padding-bottom: 6px;
+  font-size: 20px;
+  color: #3278e2;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3278e2;
+  padding-bottom: 8px;
   text-align: center;
+  letter-spacing: 0.3px;
 }
 
 .link-box {
-  background: white;
-  padding: 14px 18px;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  background: #fdfdfd;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .link-box:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
 }
 
 .link-box a {
   text-decoration: none;
   color: #2c3e50;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 16px;
   display: block;
 }
 
 footer {
-  margin-top: 50px;
-  font-size: 12px;
-  color: #888;
+  margin-top: 60px;
+  font-size: 13px;
+  color: #aaa;
 }
-
